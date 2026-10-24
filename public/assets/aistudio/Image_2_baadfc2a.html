@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&amp;family=Outfit:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#101419;color:#e0e2ea;font-family:'Outfit',sans-serif;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#dbffde", "on-tertiary-fixed-variant": "#8e004c", "inverse-primary": "#006d36", "on-secondary-fixed-variant": "#004f58", "surface-container-lowest": "#0a0e13", "inverse-surface": "#e0e2ea", "on-tertiary": "#640034", "outline": "#849585", "on-secondary-fixed": "#001f24", "secondary-fixed-dim": "#00daf3", "on-tertiary-fixed": "#3e001e", "surface-container-high": "#262a30", "outline-variant": "#3b4b3d", "surface-container": "#1c2025", "surface-dim": "#101419", "secondary": "#bdf4ff", "background": "#101419", "error": "#ffb4ab", "inverse-on-surface": "#2d3136", "surface-container-highest": "#31353b", "on-primary-fixed": "#00210c", "on-primary-fixed-variant": "#005227", "on-background": "#e0e2ea", "tertiary-fixed-dim": "#ffb0c9", "secondary-container": "#00e3fd", "on-secondary-container": "#00616d", "on-primary": "#003919", "on-error": "#690005", "tertiary": "#fff3f4", "surface-tint": "#00e477", "error-container": "#93000a", "surface-container-low": "#181c21", "primary-fixed-dim": "#00e477", "tertiary-fixed": "#ffd9e3", "surface-bright": "#36393f", "surface-variant": "#31353b", "primary-fixed": "#61ff98", "on-error-container": "#ffdad6", "surface": "#101419", "primary-container": "#10f984", "tertiary-container": "#ffccda", "on-surface": "#e0e2ea", "secondary-fixed": "#9cf0ff", "on-surface-variant": "#b9cbb9", "on-secondary": "#00363d", "on-primary-container": "#006e36", "on-tertiary-container": "#b90066" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "2.5rem", "space-xl": "2.5rem", "gutter-desktop": "1.5rem", "margin": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-lg": ["Outfit"], "label-mono": ["JetBrains Mono"], "label-caps": ["JetBrains Mono"], "metric-value": ["Outfit"], "body-lg": ["Outfit"], "body-md": ["Outfit"], "headline-lg-mobile": ["Outfit"], "display-lg-mobile": ["Outfit"], "headline-md": ["Outfit"], "display-lg": ["Outfit"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }], "label-caps": ["10px", { "lineHeight": "12px", "letterSpacing": "0.08em", "fontWeight": "600" }], "metric-value": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Kinetix Macro Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6OY-ezv6JgnTNkXxuIouhmtXv8MGMy9L0sTjSqB28mwRljmnjPt79sTh9zmdAGXzrMVXPomufx5WDUfL99CDlqLVi9ucoMf8Q0KoguvFNSpxQkEoZJLmnwh2DMuZQzpCYahmiZ-82RxYtC3JXnc6azGzJzl6NCsROgQTYgdugqh7nWIa5liXgVzV_0o3W1zVRPIQP6rW7qr0qNC0D56xEe-n7oP0WuwpmgMEKEAcq_FFKcMPmDXQ"/><span class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface truncate hidden xs:inline">Kinetix</span></div><button class="flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-high/60 backdrop-blur-md min-h-[44px] hover:bg-surface-container-highest transition-colors"><span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">calendar_today</span><span class="font-label-mono text-label-mono text-on-surface font-medium whitespace-nowrap">Today, Oct 24</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></button><div class="flex items-center justify-end flex-shrink-0 min-w-[44px] min-h-[44px]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuoGiy28qVE78X1WN4aFaQ_r2RwHvBoTKVrnTesprVD0A_3YZGBtZey5H2E7uOwcuFNzeQic9R1jccP3tbS4GOBRsv4LG6tqlvKijr8HfWB3xCfmPlXbwEXWoJF6FqKjvspH-4BY4shm6IExqMkdiJBHGp1nUlQKjIMhNQTtze8_4Fem1U3UFL2ast_68tJwpn73NwEtcXeqsB4uGaN-x9i2TH7vSRB2k4iUYvIRoU591lDBq-ooc"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface-container-lowest px-margin"><div class="flex flex-col w-full gap-y-4 pb-6">
+<!-- Interactive Search Section -->
+<div class="relative w-full">
+<div class="relative flex items-center bg-surface-container-low rounded-xl px-3 py-2.5 shadow-sm transition-all duration-200 focus-within:bg-surface-container">
+<span class="material-symbols-outlined text-outline text-[22px] mr-2 transition-colors duration-150">search</span>
+<input class="w-full bg-transparent text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none min-w-0 pr-2" id="food-search-input" placeholder="Search 1.2M+ foods, brands, restaurants..." type="text"/>
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<button aria-label="Scan barcode" class="flex items-center justify-center w-9 h-9 rounded-lg bg-surface-container-high text-primary-container hover:bg-surface-container-highest active:scale-95 transition-all duration-150 [filter:drop-shadow(0_0_6px_rgba(16,249,132,0.4))]" type="button">
+<span class="material-symbols-outlined text-[20px]">barcode_scanner</span>
+</button>
+<button aria-label="Voice input" class="flex items-center justify-center w-9 h-9 rounded-lg bg-surface-container-high text-secondary-container hover:bg-surface-container-highest active:scale-95 transition-all duration-150 [filter:drop-shadow(0_0_6px_rgba(0,227,253,0.35))]" type="button">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Live Metabolic Telemetry Banner (Dynamic Budget Drawer) -->
+<div class="w-full bg-surface-container-low rounded-xl p-3.5 relative overflow-hidden shadow-md">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-primary-container/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Remaining Target</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-primary-fixed [filter:drop-shadow(0_0_8px_rgba(16,249,132,0.5))]" id="calorie-budget">740</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant">kcal</span>
+</div>
+</div>
+<!-- Multi-Segment Macro Vector Visualizer -->
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden flex gap-0.5 mb-2.5">
+<div class="h-full bg-secondary-container transition-all duration-500 rounded-l-full [filter:drop-shadow(0_0_4px_rgba(0,227,253,0.6))]" style="width: 42%;"></div>
+<div class="h-full bg-primary-container transition-all duration-500 [filter:drop-shadow(0_0_4px_rgba(16,249,132,0.6))]" style="width: 35%;"></div>
+<div class="h-full bg-tertiary-fixed-dim transition-all duration-500 rounded-r-full [filter:drop-shadow(0_0_4px_rgba(255,176,201,0.6))]" style="width: 23%;"></div>
+</div>
+<!-- Macro Micro-Tags -->
+<div class="grid grid-cols-3 gap-2 pt-0.5">
+<div class="flex flex-col bg-surface-container rounded-lg px-2.5 py-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary-fixed">PROTEIN</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+</div>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-label-mono text-label-mono text-on-surface font-semibold">32</span>
+<span class="font-label-caps text-label-caps text-outline">g left</span>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container rounded-lg px-2.5 py-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary-fixed">CARBS</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-label-mono text-label-mono text-on-surface font-semibold">45</span>
+<span class="font-label-caps text-label-caps text-outline">g left</span>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container rounded-lg px-2.5 py-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-tertiary-fixed-dim">FATS</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+</div>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-label-mono text-label-mono text-on-surface font-semibold">17</span>
+<span class="font-label-caps text-label-caps text-outline">g left</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Meal Category Switcher Segment -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider">Target Ledger</span>
+<span class="font-label-mono text-label-mono text-primary-fixed-dim">12:30 PM Window</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5 p-1 bg-surface-container-low rounded-xl">
+<button class="meal-tab-btn py-2 px-1 text-center rounded-lg font-body-md text-body-md text-outline hover:text-on-surface transition-all duration-150" type="button">
+        Breakfast
+      </button>
+<button class="meal-tab-btn active py-2 px-1 text-center rounded-lg font-body-md text-body-md font-semibold bg-surface-container-high text-primary-container shadow-sm [filter:drop-shadow(0_0_6px_rgba(16,249,132,0.25))] transition-all duration-150" type="button">
+        Lunch
+      </button>
+<button class="meal-tab-btn py-2 px-1 text-center rounded-lg font-body-md text-body-md text-outline hover:text-on-surface transition-all duration-150" type="button">
+        Dinner
+      </button>
+<button class="meal-tab-btn py-2 px-1 text-center rounded-lg font-body-md text-body-md text-outline hover:text-on-surface transition-all duration-150" type="button">
+        Snacks
+      </button>
+</div>
+</div>
+<!-- Filter Horizon Chips (Scrollable) -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5 -mx-margin px-margin">
+<button class="filter-chip flex-shrink-0 h-7 px-3.5 rounded-full bg-primary-container text-on-primary-container font-label-mono text-label-mono font-medium shadow-sm active:scale-95 transition-all duration-150" type="button">
+      All
+    </button>
+<button class="filter-chip flex-shrink-0 h-7 px-3.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono font-medium active:scale-95 transition-all duration-150" type="button">
+      Recent
+    </button>
+<button class="filter-chip flex-shrink-0 h-7 px-3.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono font-medium active:scale-95 transition-all duration-150" type="button">
+      Frequent
+    </button>
+<button class="filter-chip flex-shrink-0 h-7 px-3.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono font-medium active:scale-95 transition-all duration-150" type="button">
+      Favorites
+    </button>
+<button class="filter-chip flex-shrink-0 h-7 px-3.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-mono text-label-mono font-medium active:scale-95 transition-all duration-150" type="button">
+      Custom
+    </button>
+</div>
+<!-- Food Database Feed List -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider">Fast Recall</span>
+<span class="font-label-mono text-label-mono text-outline">5 items ready</span>
+</div>
+<!-- Food Item 1: Chicken Breast -->
+<div class="food-item group relative flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200">
+<div class="flex items-start gap-3 min-w-0 pr-2">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex-shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Overhead close up of grilled lean chicken breast sliced on slate surface, dramatic cinematic side light, dark culinary studio photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDABBSJ6GIUc8PHtAPrg0vUTXuYqPVGlCVV4cAjZTjE-B8NulZ-JdhOTpZsPSd5ezbLDSWV2TTg2GjqhV7tsAB27xqxwrCVO2eWNN909DZD46zIbqdRKDS3yIRjAjDJ1t-OJOKYR53IKdgTyww2EjV2_wsWFA8yiJcgzg1zdCgqE5hNbN7G0pdwK6HDRk1h95GNGmz34E_aQ-YXf4s96olEeJZJGj8OQQrmXAqq-NcOeGUfRO9GBIs"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Pan-Seared Chicken Breast</span>
+<span class="inline-flex items-center text-primary-container" title="Verified Database Entry">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-mono text-label-mono text-outline">180g</span>
+<span class="text-outline text-label-mono">•</span>
+<span class="font-label-mono text-label-mono font-semibold text-on-surface">297 kcal</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-container/15 text-secondary-container font-label-caps text-label-caps font-semibold">HIGH PROTEIN</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container/10 text-secondary-fixed text-label-mono font-mono font-medium">P 54g</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-outline text-label-mono font-mono">C 0g</span>
+<span class="px-2 py-0.5 rounded-md bg-tertiary-fixed-dim/10 text-tertiary-fixed-dim text-label-mono font-mono">F 6.5g</span>
+</div>
+</div>
+</div>
+<button aria-label="Add Chicken Breast" class="quick-add-btn flex-shrink-0 w-10 h-10 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center hover:bg-primary-fixed active:scale-90 transition-all duration-150 [filter:drop-shadow(0_0_8px_rgba(16,249,132,0.45))]" type="button">
+<span class="material-symbols-outlined text-[24px]">add</span>
+</button>
+</div>
+<!-- Food Item 2: Greek Yogurt -->
+<div class="food-item group relative flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200">
+<div class="flex items-start gap-3 min-w-0 pr-2">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex-shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Top-down perspective of dense thick Greek plain yogurt in dark ceramic bowl, clean minimalistic dark studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcLlTGVmX7_z3sJKpTgAbOcbvCquvsA3axlqXFq6aswuqsEyVNpJpYrfPIR2BAk-LtHLdLsvAAVdbj-_MI5LgxI6THYBsGFWPh_zjfoaDfdBkvmdWuxABy_JbxSm8eaj5V7g46vf7IrO0WbX79sq1A8JUh4NqWXrz-Aw-dhjs1NmF3kyaSfaE9dIM-2oGcecyENN6C4Gi-Mui1GTodKTdPLV1yyTcgPlT8xjbNxq20SnJwFQF53eA"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Greek Yogurt 0%</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-container/15 text-primary-fixed-dim font-label-caps text-label-caps font-semibold">LEAN</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-mono text-label-mono text-outline">200g</span>
+<span class="text-outline text-label-mono">•</span>
+<span class="font-label-mono text-label-mono font-semibold text-on-surface">130 kcal</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container/10 text-secondary-fixed text-label-mono font-mono font-medium">P 22g</span>
+<span class="px-2 py-0.5 rounded-md bg-primary/10 text-primary-fixed-dim text-label-mono font-mono">C 8g</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-outline text-label-mono font-mono">F 0g</span>
+</div>
+</div>
+</div>
+<button aria-label="Add Greek Yogurt" class="quick-add-btn flex-shrink-0 w-10 h-10 rounded-xl bg-surface-container-high text-primary-container flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container active:scale-90 transition-all duration-150" type="button">
+<span class="material-symbols-outlined text-[24px]">add</span>
+</button>
+</div>
+<!-- Food Item 3: Rolled Oats -->
+<div class="food-item group relative flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200">
+<div class="flex items-start gap-3 min-w-0 pr-2">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex-shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Macro overhead photo of organic raw rolled oats grain texture, dark obsidian stone background with subtle contrast highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsgH6DWZT2jAkjscspOhv6WjvLY68jA7_fv9vh0TqvT8LW8jr-DO_NP9yG3HOelLFbhO8gUrXSJ40ji7FIcIVByqpkS8Ob2Ybp9VhUBoIChcC7iquW2-5ahBQgQMm6rpqZjwIed3jnFUkTM4VJOWN0C1dkmcPec9SF-D7ujr0ELUP0VQ_aUQxmUBKH2FSRbIMIyKzR0BtrAxXiRLQ0vzd49JVFreumfRW0uAIqzaf-H2HEfGS2Y6k"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Organic Rolled Oats</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-mono text-label-mono text-outline">50g</span>
+<span class="text-outline text-label-mono">•</span>
+<span class="font-label-mono text-label-mono font-semibold text-on-surface">189 kcal</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant font-label-caps text-label-caps">COMPLEX CARB</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-secondary-fixed text-label-mono font-mono">P 6g</span>
+<span class="px-2 py-0.5 rounded-md bg-primary-container/10 text-primary-fixed text-label-mono font-mono font-medium">C 34g</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-outline text-label-mono font-mono">F 3g</span>
+</div>
+</div>
+</div>
+<button aria-label="Add Rolled Oats" class="quick-add-btn flex-shrink-0 w-10 h-10 rounded-xl bg-surface-container-high text-primary-container flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container active:scale-90 transition-all duration-150" type="button">
+<span class="material-symbols-outlined text-[24px]">add</span>
+</button>
+</div>
+<!-- Food Item 4: Hass Avocado -->
+<div class="food-item group relative flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200">
+<div class="flex items-start gap-3 min-w-0 pr-2">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex-shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Cut half of fresh ripe Hass avocado showing smooth green flesh and pit on dark slate plate, dark mood modern lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGdox78EciHX_gcFzN_StNZrfvqqSXZM9kYLh781BFDss9OnbD5k_16xjfPtCcUBCa3iOtACUethvcQpcCvWDQhOCtuw10rgxsGYDNw3lxApOIc1Q3hzSn6wwoTYe8dDY9DCThRlLiIZudbPivXxjXycGCZfBU7Ai6Bp1juFuo08sUXaft9VAU9TMthZIBkR-mNoXGr_LK17enVplEWQqahDXEB42ZtQDe3G-lYZyjFyMmWb8uHA0"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Hass Avocado (Half)</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed-dim/15 text-tertiary-fixed-dim font-label-caps text-label-caps font-semibold">HEALTHY LIPID</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-mono text-label-mono text-outline">75g</span>
+<span class="text-outline text-label-mono">•</span>
+<span class="font-label-mono text-label-mono font-semibold text-on-surface">120 kcal</span>
+<span class="px-1.5 py-0.2 rounded bg-primary/10 text-primary-fixed-dim font-label-caps text-label-caps">LOW CARB</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-secondary-fixed text-label-mono font-mono">P 1.5g</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-outline text-label-mono font-mono">C 6g</span>
+<span class="px-2 py-0.5 rounded-md bg-tertiary-fixed-dim/15 text-tertiary-fixed-dim text-label-mono font-mono font-medium">F 11g</span>
+</div>
+</div>
+</div>
+<button aria-label="Add Avocado" class="quick-add-btn flex-shrink-0 w-10 h-10 rounded-xl bg-surface-container-high text-primary-container flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container active:scale-90 transition-all duration-150" type="button">
+<span class="material-symbols-outlined text-[24px]">add</span>
+</button>
+</div>
+<!-- Food Item 5: Sweet Potato Baked -->
+<div class="food-item group relative flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200">
+<div class="flex items-start gap-3 min-w-0 pr-2">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex-shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Sliced roasted orange sweet potato with caramelized edges on dark textured matte tray, vibrant studio food photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz-slEtdY6lbn6NPRDrIGsRlk4TvNcK_SJ3TqwZc-28pqiSog_dpl1fz6hhELqhXmS8SZ8OnGU7CwKrSYVpu3jxXVjKHpIdmdHAgpJy0yfu-1S2Eyx3p3fWVxqKWW659UOR_rfFOxT9NvHyHgXz0JnilKgiPsCxyfxZTyUWO3-3dqQ-b4lm-GtSuFkynojQqEbGG864q5V-h4CPexsxbfsMm1rxFZqhjhU_brrtOrsiWuAKnjbd70"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Sweet Potato Baked</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-mono text-label-mono text-outline">150g</span>
+<span class="text-outline text-label-mono">•</span>
+<span class="font-label-mono text-label-mono font-semibold text-on-surface">135 kcal</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-secondary-fixed text-label-mono font-mono">P 3g</span>
+<span class="px-2 py-0.5 rounded-md bg-primary-container/10 text-primary-fixed text-label-mono font-mono font-medium">C 31g</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-outline text-label-mono font-mono">F 0.2g</span>
+</div>
+</div>
+</div>
+<button aria-label="Add Sweet Potato" class="quick-add-btn flex-shrink-0 w-10 h-10 rounded-xl bg-surface-container-high text-primary-container flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container active:scale-90 transition-all duration-150" type="button">
+<span class="material-symbols-outlined text-[24px]">add</span>
+</button>
+</div>
+</div>
+<!-- Bottom Fast-Action Grid -->
+<div class="grid grid-cols-2 gap-2.5 pt-2">
+<button class="flex items-center justify-center gap-2 h-12 rounded-xl bg-surface-container-high text-secondary-container hover:bg-surface-container-highest active:scale-[0.98] transition-all duration-150 [filter:drop-shadow(0_0_8px_rgba(0,227,253,0.25))]" type="button">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+<span class="font-body-md text-body-md font-semibold">Barcode Scan</span>
+</button>
+<button class="flex items-center justify-center gap-2 h-12 rounded-xl bg-surface-container-high text-primary-container hover:bg-surface-container-highest active:scale-[0.98] transition-all duration-150 [filter:drop-shadow(0_0_8px_rgba(16,249,132,0.2))]" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+<span class="font-body-md text-body-md font-semibold">Custom Food</span>
+</button>
+</div>
+<!-- Floating Feedback Toast Template (Activated via JS) -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 scale-95 transition-all duration-200 flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container-highest text-primary-fixed shadow-xl [filter:drop-shadow(0_0_12px_rgba(16,249,132,0.4))]" id="log-toast">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span class="font-body-md text-body-md font-semibold" id="toast-text">Added to Lunch</span>
+</div>
+</div>
+<script>
+  // Meal Category Tabs Interactive Switcher
+  const mealTabs = document.querySelectorAll('.meal-tab-btn');
+  mealTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      mealTabs.forEach(t => {
+        t.classList.remove('bg-surface-container-high', 'text-primary-container', 'font-semibold', 'shadow-sm');
+        t.classList.add('text-outline');
+      });
+      tab.classList.remove('text-outline');
+      tab.classList.add('bg-surface-container-high', 'text-primary-container', 'font-semibold', 'shadow-sm');
+    });
+  });
+
+  // Filter Chips Interactive Switcher
+  const filterChips = document.querySelectorAll('.filter-chip');
+  filterChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      filterChips.forEach(c => {
+        c.classList.remove('bg-primary-container', 'text-on-primary-container');
+        c.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      chip.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      chip.classList.add('bg-primary-container', 'text-on-primary-container');
+    });
+  });
+
+  // Quick Add Button Micro-Interaction & Budget Deduction Simulation
+  const addButtons = document.querySelectorAll('.quick-add-btn');
+  const toast = document.getElementById('log-toast');
+  const budgetEl = document.getElementById('calorie-budget');
+  let currentBudget = 740;
+
+  addButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const foodCard = btn.closest('.food-item');
+      const foodName = foodCard ? foodCard.querySelector('.font-body-md.font-semibold').textContent.trim() : 'Item';
+      
+      // Visual feedback on button
+      btn.classList.add('scale-90', 'bg-primary-container', 'text-on-primary-container');
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.textContent = 'done';
+        setTimeout(() => {
+          icon.textContent = 'add';
+          btn.classList.remove('scale-90');
+        }, 1200);
+      }
+
+      // Decrement calorie budget safely
+      currentBudget = Math.max(0, currentBudget - 130);
+      if (budgetEl) budgetEl.textContent = currentBudget;
+
+      // Display floating pulse toast
+      if (toast) {
+        const toastText = document.getElementById('toast-text');
+        if (toastText) toastText.textContent = `Added ${foodName}`;
+        toast.classList.remove('opacity-0', 'scale-95');
+        toast.classList.add('opacity-100', 'scale-100');
+
+        setTimeout(() => {
+          toast.classList.remove('opacity-100', 'scale-100');
+          toast.classList.add('opacity-0', 'scale-95');
+        }, 1600);
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary-container [filter:drop-shadow(0_0_6px_rgba(16,249,132,0.45))]"><div class="flex justify-around items-center h-20 px-space-sm"><a class="flex flex-col items-center justify-center gap-space-xs min-w-[44px] min-h-[44px] px-3 py-1 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[24px]">dashboard</span><span class="font-label-caps text-label-caps tracking-wider uppercase">Dash</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs min-w-[44px] min-h-[44px] px-3 py-1 rounded-xl transition-all duration-150 text-primary-container [filter:drop-shadow(0_0_6px_rgba(16,249,132,0.45))]" data-path="food-logger" href="#"><span class="material-symbols-outlined text-[24px]">add_circle</span><span class="font-label-caps text-label-caps tracking-wider uppercase">Log</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[44px] min-h-[44px] px-3 py-1 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="analytics" href="#"><span class="material-symbols-outlined text-[24px]">query_stats</span><span class="font-label-caps text-label-caps tracking-wider uppercase">Analytics</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[44px] min-h-[44px] px-3 py-1 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-150" data-path="recipes" href="#"><span class="material-symbols-outlined text-[24px]">menu_book</span><span class="font-label-caps text-label-caps tracking-wider uppercase">Recipes</span></a></div></nav></body></html>

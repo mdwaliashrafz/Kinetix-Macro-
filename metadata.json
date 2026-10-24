@@ -1,0 +1,6 @@
+{
+  "name": "Kinetix Macro - Bio-Performance Nutrition & Macro Tracker",
+  "description": "High-precision metabolic tracking, quantified macro ledger, and nutrition telemetry designed for performance athletes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

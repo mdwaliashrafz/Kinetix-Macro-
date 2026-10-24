@@ -1,0 +1,202 @@
+---
+name: Kinetic Dark Bio-Performance
+colors:
+  surface: '#101419'
+  surface-dim: '#101419'
+  surface-bright: '#36393f'
+  surface-container-lowest: '#0a0e13'
+  surface-container-low: '#181c21'
+  surface-container: '#1c2025'
+  surface-container-high: '#262a30'
+  surface-container-highest: '#31353b'
+  on-surface: '#e0e2ea'
+  on-surface-variant: '#b9cbb9'
+  inverse-surface: '#e0e2ea'
+  inverse-on-surface: '#2d3136'
+  outline: '#849585'
+  outline-variant: '#3b4b3d'
+  surface-tint: '#00e477'
+  primary: '#dbffde'
+  on-primary: '#003919'
+  primary-container: '#10f984'
+  on-primary-container: '#006e36'
+  inverse-primary: '#006d36'
+  secondary: '#bdf4ff'
+  on-secondary: '#00363d'
+  secondary-container: '#00e3fd'
+  on-secondary-container: '#00616d'
+  tertiary: '#fff3f4'
+  on-tertiary: '#640034'
+  tertiary-container: '#ffccda'
+  on-tertiary-container: '#b90066'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#61ff98'
+  primary-fixed-dim: '#00e477'
+  on-primary-fixed: '#00210c'
+  on-primary-fixed-variant: '#005227'
+  secondary-fixed: '#9cf0ff'
+  secondary-fixed-dim: '#00daf3'
+  on-secondary-fixed: '#001f24'
+  on-secondary-fixed-variant: '#004f58'
+  tertiary-fixed: '#ffd9e3'
+  tertiary-fixed-dim: '#ffb0c9'
+  on-tertiary-fixed: '#3e001e'
+  on-tertiary-fixed-variant: '#8e004c'
+  background: '#101419'
+  on-background: '#e0e2ea'
+  surface-variant: '#31353b'
+typography:
+  display-lg:
+    fontFamily: Outfit
+    fontSize: 56px
+    fontWeight: '700'
+    lineHeight: 64px
+    letterSpacing: -0.03em
+  display-lg-mobile:
+    fontFamily: Outfit
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 48px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Outfit
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: 40px
+    letterSpacing: -0.02em
+  headline-lg-mobile:
+    fontFamily: Outfit
+    fontSize: 26px
+    fontWeight: '600'
+    lineHeight: 34px
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Outfit
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.01em
+  metric-value:
+    fontFamily: Outfit
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 32px
+    letterSpacing: -0.02em
+  body-lg:
+    fontFamily: Outfit
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Outfit
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  label-mono:
+    fontFamily: JetBrains Mono
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+    letterSpacing: 0.06em
+  label-caps:
+    fontFamily: JetBrains Mono
+    fontSize: 10px
+    fontWeight: '600'
+    lineHeight: 12px
+    letterSpacing: 0.08em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-desktop: 1.5rem
+  margin: 1rem
+  margin-desktop: 2.5rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+The design system establishes a focused, high-precision dark atmosphere tailored for quantified self-tracking, metabolic health, and athletic optimization. It targets data-driven individuals, athletes, and performance-minded users who prioritize low-friction consumption of nutritional density and metabolic velocity.
+
+The aesthetic fuses **Precision Minimalism** with **Hyper-Contrast Cybernetic Accents**. Surfaces mimic engineered hardware consoles: deeply recessed, noise-free, and calibrated for ultra-low optical fatigue on OLED panels. Visual energy is strictly directed via precise, saturated neon vectors against pitch-black strata, evoking technical instrumentation rather than a passive lifestyle log.
+
+## Colors
+
+The color palette centers on functional chromatic signaling, where color operates as quantitative data rather than decoration:
+
+- **Surface Neutral Foundations:** Deep obsidian base `#0B0F14` for absolute background ground, elevated to `#121820` for secondary canvas and interactive card shells, and `#1A232E` for hovered or tertiary interactive tiers. Subtle separation is maintained via `#263545` at low opacities.
+- **Caloric & Kinetic Energy (Primary):** `#10F984` (Neon Emerald) signals total energy budget, active expenditure, and net caloric equilibrium.
+- **Protein Synthesis (Secondary):** `#00E5FF` (Neon Cyan) anchors lean mass development, amino acid goals, and target recovery markers.
+- **Lipids & Fats (Tertiary):** `#FF2E93` (Neon Fuchsia) signifies essential fatty acids, hormone regulation thresholds, and dense lipid reservoirs.
+- **Carbohydrates & Glycogen (Accent Quaternary):** `#FFD000` (Solar Amber) visualizes rapid-burn substrate availability, glycemic replenishment, and workout fueling.
+- **Text & Hierarchy:** Pure white `#FFFFFF` strictly reserved for real-time numeric data values and critical headlines; subdued cool grey `#8E9CAE` for metrics labels and descriptive strings; deep slate `#4A5868` for non-interactive track rails and inactive structural elements.
+
+## Typography
+
+The typographic system utilizes a high-contrast pairing between **Outfit** and **JetBrains Mono**:
+
+- **Outfit** handles narrative headers, macro-level values, and body copy. Its clean geometric curvature provides instant readability at immense scales without clinical sterile dryness.
+- **JetBrains Mono** delivers uncompromising technical fidelity for metadata tags, nutrient ratios, gram markers, unit scales, timestamps, and kinetic percentage differentials.
+- **Tabular Figures:** All numeric displays must render using tabular figure alignment (`font-variant-numeric: tabular-nums`) to prevent horizontal jitter during live telemetry updates and animated metric adjustments.
+
+## Layout & Spacing
+
+The layout is built upon an 8pt architectural rhythm, optimized for edge-to-edge compact data density on mobile and segmented dashboard telemetry on wider screens:
+
+- **Mobile (< 768px):** Single-column fluid stream with strict `1rem` outer screen gutters. Nutrient breakdowns arrange horizontally in dynamic micro-columns or pinned modular tiles.
+- **Tablet (768px - 1024px):** 8-column layout with `1rem` gutters. Metric rings and log streams coexist side-by-side.
+- **Desktop (L
+NŠŠˆL‹XÛÛ[[ˆ^[Ý]Ú]Hš^YX^]ÚYÛÛZ[™\ˆØ\Y]LŽÙ[\™YÛˆÚYHšY]ÜÜË\Ú[™ÈK\™[XÝ]\œÈ[™‹\™[XX\™Ú[ˆÙ™œÙ]ËˆXXÜ›È[˜[]XÜÈØØÝ\H[ˆ[˜ÚÜ™YXÛÛ[[ˆ[[Y]žH˜Z[Ú[HHÙÙÚ[™ÈYÙ\ˆÜ[œÈÛÛ[[œË‚‚ˆÈÈ[]˜][Ûˆ	ˆ\‚•š\ÝX[Y\˜\˜ÚHÙ\È›Ý™[HÛˆ[XšY[Y™\ÙYÜ™^HÚYÝÜËˆ[œÝXY][\Þ\È
+Š•Û˜[^Y\š[™ÊŠ‹
+ŠÜš\ÜÜÜÜˆÛÝÜÊŠ‹[™
+Š”ÝXHÝXÝ\˜[›Ü™\œÊŠŽ‚‚‹H
+Š‘Ü›Ý[™›ÛÜˆ
+˜\ÙHØ[˜\ÊNŠŠˆÌŒŒMˆÛÈ›È›Ü™\œÈ[™›È[XšY[ÛÝË‚‹H
+Š“]™[H
+\Ú›Ø\™Ø\™È	ˆ[™[ÊNŠŠˆÝ\™˜XÙHÌLŒNŒ›Ý[™YžHH\ÛÛYZ\›[™H›Ü™\ˆÙˆ™Ø˜JMKMKMKŒÊXÜˆ[YÛÛ^X[›Ü™\œÈ™Ø˜JM‹KLÌ‹ŒMJX‚‹H
+Š“]™[ˆ
+XÝ]™KÔÙ[XÝYÒ[\˜XÝ]™HÝ™\›^\ÊNŠŠˆÝ\™˜XÙHÌPLŒÌ‘XÚ]H\Z\›[™H›Ü™\ˆ]™Ø˜JMKMKMKŒM
+XXØÛÛ\[šYYžHH\™Ù]YÜXØ[ÛÝÎˆ›Þ\ÚYÝÎˆMœLœ˜\ŠK[XXÜ›ËXXØÙ[X[KLŒ
+X‚‹H
+Š“™[ÛˆÛÝÈ›Ùš[\ÎŠŠˆXÝ]™H[™XØ]ÜœÈ›Ú™XÝ›ØÝ\ÙY\™XÝ[Û˜[[[Z[˜][Ûˆ˜]\ˆ[ˆœ›ØY]YHY™\Ú[ÛŽˆL™Ø˜JM‹KLÌ‹ŒÍJX›Üˆ[Y\˜[Ú[™]XÈšYÙÙ\œË[™L™Ø˜JŒŽKMKŒÍJX›ÜˆÞX[ˆÝ]\Ë‚‚ˆÈÈÚ\\Â‚•H\ÚYÛˆ\Ù\È˜[[˜ÙY[Ù\›ˆÙ[ÛY]šXÈÝ\˜]\™\È
+›Ý[™Y™\ÜÎˆ˜
+N‚‚‹H
+Š‘]HØ\™È	ˆ[Ù[\ÎŠŠˆÝ[™\™^™YÈLœ
+›Ý[™Y[Ø\]Z]˜[[
+HÛÜ›™\œËÝšZÚ[™ÈH˜[[˜ÙH™]ÙY[ˆXÚšXØ[[Ù[\š]H[™\™ÛÛ›ÛZXÈ›ÝË‚‹H
+Š’[\˜XÝ]™H]ÛœÈ	ˆÙ[XÝÜœÎŠŠˆ
+\™[X
+HÈXZ[Z[ˆXÝXØ[ÛXÚÈ\™Ù]Yš[š][Û‹‚‹H
+Š‘Ø]YÙ\ËZXÜ›È˜YÙ\È	ˆš[™ÜÎŠŠˆ[H˜YX[
+NNN\
+H›Üˆ›ÙÜ™\ÜÈ˜\œËY]šXÈ[[™XØ]ÜœË[™Ú\˜Ý[\ˆ˜YX[]šY[š[™ÜË‚‚ˆÈÈÛÛ\Û™[Â‚ˆÈÈÈ]ÛœÂ‹H
+Š”š[X\žHXÝ[Ûˆ
+[™\™ÞH›ØÝ\ÊNŠŠˆ˜XÚÙÜ›Ý[™ÌLŽN^ÌŒŒM[ˆX]žHÙZYÚ
+Œ
+K[]˜][Ûˆ]™\Ý\œÝ[™ÈÚ][ˆXÝ]™HÜÜÜˆYÙHÛÝÈ
+›Þ\ÚYÝÎˆŒ™Ø˜JM‹KLÌ‹JX
+HÛˆÝ™\ˆ[™›ØÝ\Ë‚‹H
+Š”ÙXÛÛ™\žHÚÜÝŠŠˆ˜[œÜ\™[˜XÚÙÜ›Ý[™\›Ü™\ˆÌPLŒÌ‘X^Ñ‘‘‘‘‘˜ˆÝ™\ˆ˜[œÚ][ÛœÈ›Ü™\ˆÈÌMQ‘˜Ú]H˜Z[[\š[Üˆ[™Ø˜JŒŽKMKŒJX‚‹H
+Š‘\ÝXÝ]™HÈYÚP[\ŠŠˆ˜[œÜ\™[˜XÚÙÜ›Ý[™Ú]Ñ‘Œ‘NLØZ\›[™H›Ü™\ˆ[™^‚‚ˆÈÈÈY]šXÈØ\™Â‹H˜XÚÙÜ›Ý[™ÌLŒNŒ\\š[Y]\ˆ›Ü™\ˆÙˆ™Ø˜JMKMKMKŒJX‚‹H[›™YÜXY\ˆÚ]X™[XØ\Ø[ˆÎNPÐQX‚‹H\™ÙH›ÛZ[™[Y]šXË]˜[YX[ˆÑ‘‘‘‘‘˜ÛÝ\YÚ][›[™H[H[˜YÙ\ÈÛÛZ[š[™È[Û›ÝÛšXÈ\ÙÝÛˆ\œ›ÝÜÈ[ˆ\›ÜšX]HXXÜ›ÈXØÙ[Ë‚‹HÝ™\š[™ÈÝ]\È[]˜]HHØ\™›Ü™\ˆÈ™Y›XÝHÛZ[˜[]šY[XØÙ[ÛÛÜˆ]Ì	H[K‚‚ˆÈÈÈXXÜ›È›ÙÜ™\ÜÈØ]YÙ\È
+š[™ÜÈ	ˆ[™X\ˆ˜\œÊB‹H
+Š•˜XÚÈ˜Z[ŠŠˆ[™š[Y˜\ÙH˜XÚÈ™[™\™Y]ÌPLŒÌ‘X‚‹H
+Š‘š[˜\ŽŠŠˆš]šY™[ÛˆÚÙ[œÈ
+ÌLŽNÌMQ‘˜Ñ‘‘Ñ‘Œ‘NLØ
+HÚ][™XØ\È›Ý[™YˆH\Ø\œšY\È[ˆ[[œÚYšYY[Z[›Ý\È›ÛÛHY™™XÝ
+š[\Žˆ›Ü\ÚYÝÊÝ\œ™[ÛÛÜŠX
+K‚‹H
+Š”ÝX^ŠŠˆÙ[\‹X[YÛ™Y\Ü^HÙˆÛÛœÝ[YYœËˆ™[XZ[š[™ÈÜ˜[\È][^š[™ÈX™[[[Û›Ø‚‚ˆÈÈÈ[œ]šY[È	ˆ]ZXÚÈÙÈÝ\\œÂ‹HÝË\›Ùš[H[œ]ÈÙ]YØZ[œÝÌŒŒM˜XÚÙÜ›Ý[™[œÙ][œÚYHÌLŒNŒØ\™\™[Ë‚‹H\™]]˜[›Ü™\ˆÌPLŒÌ‘XÝÚ]Ú[™ÈÛˆXÝ]™H\[™È›ØÝ\ÈÈYÚ]š\ÚXš[]HÌMQ‘˜Ú]™\›È][˜ÞK‚‹HšYÚX[YÛ™Y[Y\šXÈ[œ]È›Ü›X]YÚ]X[\ˆ[Û›È[Y\˜[ÎÈ[X™YY[š]\ØÜš\ÜœÈ
+K™Ë‹ØØØ[[
+HÝ]XØ[H[›™Y[ˆ]]YÛ]K‚‚ˆÈÈÈÚ\È	ˆš[\ˆÚÙ[œÂ‹HZYÚŽ›Ý[™YNNN\Y[™ÈLœ‚‹H™\Ý[™ÈÝ]Nˆ\šÈš[ÌLŒNŒZ\›[™H›Ü™\ˆÌŒÍMX^ÎNPÐQX‚‹HXÝ]™HÝ]Nˆ˜XÚÙÜ›Ý[™[™Ø˜JM‹KLÌ‹ŒJXÛÛY›Ü™\ˆÌLŽN^ÌLŽNÚ]ÝXHÛÝË‚‚ˆÈÈÈÚXÚØ›Þ\È	ˆÙYÛY[YXÚÙ\œÂ‹HÙYÛY[YÝÚ]Ú\È™X]\™H[ˆØœÚYX[ˆ˜^HÚ]ÛY[™È[XœÈ[ˆÌPLŒÌ‘X‚‹HÝ\ÝÛHÚXÚØ›Þ\È\Ü^HHÚ\œœÝ\ÝÛHÚXÚÛX\šÈ[[Z[˜]Y[ˆÌLŽNÚ[ˆXÝ]˜]YYØZ[œÝH]ÚÌŒŒM›Þ
